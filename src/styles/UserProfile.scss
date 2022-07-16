@@ -1,0 +1,31 @@
+@import "App.scss";
+@import "Colors.scss";
+
+.userProfile {
+  background-color: $lightGreyBgColor;
+  min-height: 100vh;
+
+  .formControl {
+    margin: 1rem 1rem 0;
+    padding: 2rem;
+
+    .submitLink {
+      text-decoration: none;
+
+      .submitBtn {
+        margin: 1.5rem .8rem;
+        color: $colorWhite;
+        background: $subMenuButton;
+        font-size: 1rem;
+    
+        &:hover {
+          background: $subMenuButtonHover,
+        }
+      }
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: .1rem;
+    }
+  }
+}

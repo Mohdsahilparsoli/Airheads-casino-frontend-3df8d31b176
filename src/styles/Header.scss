@@ -1,0 +1,100 @@
+@import "App.scss";
+@import "Colors.scss";
+
+$sidebarMargin: 8.2rem;
+
+.header {
+  background-color:$headerColor;
+  grid-column: full-start / -1;
+
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+
+  & .MuiButton-root {
+    min-width: .3rem;
+    font-size: 1rem;
+  }
+
+  .leftButtons {
+    flex: 1;
+    display: flex;
+
+    &:first-child {
+      margin-left: $sidebarMargin;
+    }
+  }
+
+  .rightButtons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .sidebar,
+  .casino,
+  .login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: transparent;
+    box-shadow: none;
+    color: $headerBtnColor;
+    margin-right: .5rem;
+
+    &:hover {
+      background-color: $headerBtnHover;
+    }
+  }
+
+  .casino {
+    border: .5px solid;
+    border-color: rgba(161, 161, 161, 0.85);
+  }
+
+  .registration {
+    background-color: transparent;
+    box-shadow: none;
+    color: $headerBtnColor;
+    margin-right: .5rem;
+    border: 2px solid $colorWhite;
+
+    &:hover {
+      background-color: $colorWhite;
+      border: 2px solid $colorWhite;
+    }
+  }
+
+  .logo {
+    margin-right: $sidebarMargin;
+    display: flex;
+    justify-content: center;
+    color: $colorWhite;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    & .btnText { 
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    .leftButtons,
+    .rightButtons {
+      display: none;
+    }
+
+    .logo {
+      margin-right: 0;
+    }
+  }
+}
+
+

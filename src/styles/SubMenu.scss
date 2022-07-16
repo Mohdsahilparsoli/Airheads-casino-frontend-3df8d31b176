@@ -1,0 +1,35 @@
+@import "App.scss";
+@import "Colors.scss";
+
+.subMenu {
+  background-color:$lightGreyBgColor;
+  grid-column: center-start / center-end;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 3rem;
+  padding: 2rem 0;
+
+  // .button {
+  //   color: $colorWhite;
+  //   background: $subMenuButton;
+  //   margin-right: 1rem;
+  //   padding: .5rem 1rem;
+  //   font-size: 1rem;
+
+  //   &:hover {
+  //     background: $subMenuButtonHover;
+  //   }
+  // }
+
+  // @media only screen and (max-width: $bp-small) {  
+  //   .subMenu {
+
+  //     .button {
+  //       display: "none"
+  //     }
+  //   }
+  // }
+}

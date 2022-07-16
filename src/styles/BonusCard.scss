@@ -1,0 +1,40 @@
+@import "Colors.scss";
+
+.gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 23rem;
+  box-shadow: inset -1px 0 0 0 #dcdcdc, inset 1px 0 0 0 #dcdcdc;
+  padding: 0 .5rem;
+  margin: .5rem;
+
+  .giftView {
+    height: 11rem;
+  }
+
+  .giftCounter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .giftButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .bonusCardSelect {
+      background: $greenBtnColor;
+      color: #fff;
+      margin: .5rem;
+    
+      &:hover {
+        background: $greenBtnHover
+      }
+    }
+  }
+}

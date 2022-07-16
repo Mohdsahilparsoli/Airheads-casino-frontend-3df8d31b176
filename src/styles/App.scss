@@ -1,0 +1,46 @@
+@import "Colors.scss";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+$bp-large: 75em; //1200px / 16px = 75em;
+$bp-medium: 48em; //768px / 16px = 48em;
+$bp-small: 37.5em; //600px / 16px = 37.5em;
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato;
+  line-height: 1.6;
+}
+
+.container {
+  background-color: $lightGreyBgColor;
+  display: grid;
+  // grid-template-rows: 35vh 6vh 8vh  min-content;
+  grid-template-rows: 35vh minmax(min-content, 6vh)   min-content;
+  grid-template-columns: [full-start] minmax(0, 1fr) 
+                          [center-start] repeat(6, [col-start] minmax(min-content, 18rem) [col-end]) 
+                          [center-end] minmax(0, 1fr) [full-end];
+  padding-top: 5rem;
+}
+
+.mainGameContainer {
+  background-color: $lightGreyBgColor;
+  padding-top: 4.7rem;
+  padding-bottom: 5rem;
+}
+
+.profileContainer {
+  padding-top: 5rem;
+  min-height: 30rem;
+}
+
+

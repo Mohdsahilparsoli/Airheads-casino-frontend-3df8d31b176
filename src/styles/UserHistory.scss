@@ -1,0 +1,129 @@
+@import "App.scss";
+@import "Colors.scss";
+
+.userHistory {
+  background-color: $lightGreyBgColor;
+  min-height: 100vh;
+
+  .historyOuter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+
+    @media only screen and (max-width: 60em) {
+      flex-direction: column
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1rem 0 0;
+    }
+
+    .leftMenu {
+      background: $colorWhite;
+      height: 30rem;
+      // min-width: 21rem;
+      min-width: 25%;
+      margin: 1rem;
+
+      @media only screen and (max-width: 60em) {
+        width: 100%;
+        height: 20rem;
+        margin: 0;
+        minWidth: 0;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        height: 30rem;
+        margin: 0;
+      }
+
+      .userButtons {
+        display: flex;
+        justify-content: center;
+
+        .optionBtn {
+          background: $colorWhite;
+          border-radius: 0;
+          border: 1px solid #f2f2f2;
+          font-weight: 600;
+          flex-grow: 1;
+      
+          &:hover {
+            background: transparent;
+            color: $headerBtnColor;
+          }
+      
+          &:focus {
+            background: transparent;
+            color: $headerBtnColor;
+            border-bottom: 1px solid white;
+          }
+        }
+      
+      }
+
+      .dates {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        @media only screen and (max-width: 60em) {
+          flex-direction: row;
+        }
+    
+        @media only screen and (max-width: $bp-small) {
+          flex-direction: column;
+        }
+
+        .datePicker {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 1rem;
+
+          .dateTitle {
+            font-weight: 600
+          }
+        }
+      }
+
+      .historyButtonOuter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .historyButton {
+          background: $greenBtnColor;
+          border-radius: 5;
+          font-weight: 600;
+          color: #fff;
+      
+          &:hover {
+            background: $greenBtnHover
+          }
+        }
+      }
+
+      
+    }
+
+    .rightMenu {
+      position: relative;
+      background: $colorWhite;
+      min-height: 30rem;
+      // min-width: 37rem;
+      min-width: 50%;
+      margin: 1rem;
+  
+      @media only screen and (max-width: 60em) {
+        width: 100%;
+        margin: 1rem 0 0;
+        min-width: 0,
+      }
+    }
+  }
+
+}

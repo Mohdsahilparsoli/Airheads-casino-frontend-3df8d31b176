@@ -1,0 +1,57 @@
+@import "App.scss";
+@import "Colors.scss";
+
+.menu {
+  background-color: $colorWhite;
+  grid-column: full-start / full-end;
+
+  margin: 5px 0;
+  width: 100%;
+
+  
+  display: grid;
+  grid-template-columns: [menu-start] minmax(0, 1fr)[menu-center-start] minmax(0, 107rem) [menu-center-end] minmax(0, 1fr) [menu-end];
+
+  .menuInner {
+    grid-column: menu-center-start / menu-center-end;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menuInnerLinkButton {
+      color: #f82b4d;
+      text-decoration: none;
+
+      .btn {
+        justify-self: start;
+    
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(.5rem, 10rem));
+      justify-self: center;
+  
+      padding-left: .7rem;
+      padding-right: .7rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+  }
+
+  & .MuiButton-root {
+    background-color: transparent;
+    box-shadow: none;
+
+    &:hover {
+      color: $headerBtnColor;
+    }
+  }
+}

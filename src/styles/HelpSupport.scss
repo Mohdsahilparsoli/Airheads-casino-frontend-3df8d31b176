@@ -1,0 +1,58 @@
+@import "App.scss";
+@import "Colors.scss";
+
+.helpSupport {
+  background-color: $lightGreyBgColor;
+  grid-column: center-start / center-end;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .infoMenu {
+    background-color: $colorWhite;
+    width: 19rem;
+    padding: .3rem 1.25rem;
+
+    .menuItem {
+      display: block;
+      text-decoration: none;
+      padding: 1rem .1rem;
+      color: $supportMenuItemColor;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $supportMenuItemBorder;
+      }
+
+      &:active {
+        color: $supportMenuItemHoverColor;
+
+        &:not(:last-child) {
+          border-bottom: 2px solid $supportMenuItemHoverColor;
+        }
+      }
+
+      &:hover {
+        color: $supportMenuItemHoverColor;
+      }
+
+    }
+  }
+
+  .content {
+    background-color: $lightGreyBgColor;
+    margin-left: 1.5rem;
+    width: 100%;
+
+    .textbox {
+      font: 15px/1.8em "Open Sans", sans-serif;
+      color: #434343;
+
+      margin: 1rem 0;
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 1.25rem 0 1.25rem;
+      }
+    }
+  }
+}

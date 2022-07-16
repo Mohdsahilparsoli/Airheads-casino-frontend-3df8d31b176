@@ -1,0 +1,159 @@
+@import "App.scss";
+
+.footer {
+  background-color: #101d2c;
+  grid-column: full-start / full-end;
+}
+
+.footer:before {
+  height: 5px;
+  content: '';
+  display: block;
+  background: #20c7d3 100%;
+  background: linear-gradient(to left, #ffb900 0, #ffba00 33%, #74d84f 66%, #20c7d3 100%);
+}
+
+.nav {
+  list-style: none;
+  border-bottom: 1px solid #fff;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-right: 2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+      color: #fff;
+      text-align: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      display: block;
+      transition: all .2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+      color: yellowgreen;
+  }
+}
+
+.media {
+  list-style: none;
+  border-bottom: 1px solid #fff;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item img {
+    text-decoration: none;
+
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    margin-left: .5rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+      color: #fff;
+      text-align: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      display: block;
+      transition: all .2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+      color: yellowgreen;
+  }
+}
+
+.providers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 1rem 8rem;
+
+  border-bottom: 1px solid #fff;
+
+  .provider img {
+    text-decoration: none;
+    margin-right: 1rem;
+
+    max-width: 8rem;
+    max-height: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 1rem 7rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1rem;
+  }
+}
+
+.payments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 13rem;
+
+  border-bottom: 1px solid #fff;
+
+  .payment img {
+    text-decoration: none;
+    margin-right: 1rem;
+
+    max-width: 8rem;
+    max-height: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 1rem 7rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1rem;
+  }
+}
+
+.copyright {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%;
+
+  &:hover,
+  &:active {
+      color: yellowgreen;
+  }
+}

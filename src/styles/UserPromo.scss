@@ -1,0 +1,41 @@
+@import "App.scss";
+@import "Colors.scss";
+
+.userPromo {
+  background-color: $lightGreyBgColor;
+  min-height: 100vh;
+
+  .promoTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $headerBtnColor;
+    padding: 1rem ;
+  }
+}
+
+.userPromo .giftOuter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.userPromo .gifts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+
+  .giftFooter {
+    align-self: center;
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}

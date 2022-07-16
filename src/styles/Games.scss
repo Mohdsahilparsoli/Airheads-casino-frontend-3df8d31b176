@@ -1,0 +1,15 @@
+@import "Colors.scss";
+
+.gameContainerOuter {
+  min-height: 100vh;
+  background-color: $lightGreyBgColor;
+  padding-top: 4.7rem;
+  padding-bottom: 5rem;
+  
+  .gameContainer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+}
+

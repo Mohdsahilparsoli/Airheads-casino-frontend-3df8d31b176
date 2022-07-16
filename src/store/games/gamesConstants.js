@@ -1,0 +1,2 @@
+export const SET_CURRENT_GAME = 'SET_CURRENT_GAME'
+export const SET_SEARCH_GAME = 'SET_SEARCH_GAME'

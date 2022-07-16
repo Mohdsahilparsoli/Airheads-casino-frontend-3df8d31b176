@@ -1,0 +1,60 @@
+
+.historyStatsHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  height: 3rem;
+  padding: .5rem;
+
+  .historyStatsHeadItem {
+    width: 20%;
+    align-self: center;
+  }
+}
+
+.stats {
+  position: relative;
+
+  .statRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: grey;
+    border-bottom: 1px solid #f2f2f2;
+    margin: .3rem;
+    padding: .8rem 1rem;
+  
+    & > * {
+      width: 20%;
+      align-self: center;
+    }
+  }
+
+  .noResult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+} 
+
+.total {
+  position: absolute;
+  left: 0;
+  bottom:0;
+  height: 3rem;
+  width: 100%;
+  border-top: 1px solid black;
+  background: #f8f8f8;
+  padding: .5rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .totalValue {
+    color: red;
+    margin-right: 1rem;
+  }
+  
+}

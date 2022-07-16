@@ -1,0 +1,111 @@
+@import "App.scss";
+@import "Colors.scss";
+
+.sidebar {
+  background-color: hotpink;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / 2;
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+
+    /* Our sidebar item styling */
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: $headerBtnColor;
+    transition: color 0.2s;
+  }
+
+  .bm-item:focus {
+    outline: none
+  }
+
+  /* Change color on hover */
+  .bm-item:hover {
+    color: white;
+  }
+
+  /* The rest copied directly from react-burger-menu docs */
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 3.5rem;
+    height: 2.7em;
+    left: 1.5rem;
+    top: 1.2rem;
+
+    & > *:focus {
+      outline: none;
+    }
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: $headerBtnColor;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: $headerBtnColor;
+}
+
+  /* This positions the cross centrally in the button */
+  .bm-cross-button > span {
+    top: 2px !important;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: $headerBtnColor;
+    width: .625rem !important;
+    height: 2.5rem !important;
+    right: 5px !important;
+  }
+
+    /* Position and sizing of clickable cross button */
+    .bm-cross-button {
+      height: 3.5rem !important;
+      width: 3.5rem !important;
+      left: .1rem !important;
+  
+      :focus {
+        outline: none;
+      }
+      
+    }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: $headerColor;
+    opacity: .9;
+    padding: 3.5em 1.5em 0;
+    font-size: 1.15em;
+    text-align: center;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: $headerBtnColor;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+
+  @media only screen and (max-width: $bp-small) {
+    .bm-burger-button {
+      left: 1rem;
+    }
+  }
+
+}
